@@ -61,6 +61,7 @@ module.exports = {
     contentBase: distRoot,
     compress: true,
     inline: false,
+    host: '192.168.96.108',
     port: 9001,
     stats
   }
