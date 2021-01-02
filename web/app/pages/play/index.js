@@ -41,7 +41,7 @@ const PlayPage = ATV.Page.create({
       setQuality = 'web'
       setPlayerType = 'ios'
     } else {
-      setQuality = 'max1080p'
+      setQuality = 'max720p'
       setPlayerType = 'progressive'
     }
     const getPlaylistUrl = ATV.Ajax.post(API.url.playlist, API.xhrOptions({
