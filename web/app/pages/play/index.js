@@ -35,19 +35,20 @@ const PlayPage = ATV.Page.create({
     // Zkontroluj, Jestli se nejedna o live show a jestli to je vysilani ve forme Video on Demand.
     // || (("elapsedPercentage" in options) && (options.isVod == 1))
 
-    let setQuality
+    /*let setQuality
     let setPlayerType
     if (options.isVod === '') {
       setQuality = 'web'
       setPlayerType = 'ios'
     } else {
-      setQuality = 'max720p'
+      setQuality = 'max1080p'
       setPlayerType = 'progressive'
-    }
+    }*/
     const getPlaylistUrl = ATV.Ajax.post(API.url.playlist, API.xhrOptions({
       ID: options.ID,
-      quality: setQuality,
-      playerType: setPlayerType,
+      playerType: 'ios',
+      //quality: setQuality,
+      //playerType: setPlayerType,
       playlistType: 'json'
     }))
 
