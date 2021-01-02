@@ -47,6 +47,7 @@ const PlayPage = ATV.Page.create({
     const getPlaylistUrl = ATV.Ajax.post(API.url.playlist, API.xhrOptions({
       ID: options.ID,
       playerType: 'ios',
+      quality: 'max1080p',
       //quality: setQuality,
       //playerType: setPlayerType,
       playlistType: 'json'
